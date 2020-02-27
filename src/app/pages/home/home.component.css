@@ -44,6 +44,10 @@
     padding: 45px 0px 20px 0px;
 }
 
+.icon-image img{
+    width: 36px;
+}
+
 /* responsive form */
 
 @media only screen and (max-width: 375px) {

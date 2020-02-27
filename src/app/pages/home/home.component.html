@@ -1,4 +1,7 @@
 <div class="main-container">
+    <div class="icon-image">
+        <img src="assets/img/banner-ico.png">
+    </div>
     <div class="search-information-input">
         <form>
             <div class="form-group">
@@ -9,7 +12,7 @@
     </div>
     <div class="container-search-results">
 
-        <div class="search-results">
+        <div class="search-results" *ngIf="name">
             <p>Resultados encontrados para "{{name}}"</p>
         </div>
         <div class="album-view" >
