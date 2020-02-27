@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
 import { map } from 'rxjs/operators';
 
+import { environment } from './../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
@@ -19,7 +20,7 @@ export class SpotifyService {
 
     const body = new HttpParams()
       .set('grant_type', 'client_credentials');
-    this.http.post('https://accounts.spotify.com/api/token', body, { headers }).subscribe((res: any) => {
+    this.http.post(environment.token, body, { headers }).subscribe((res: any) => {
       this.token = res.access_token;
       this.canCall = true;
     });
@@ -27,7 +28,7 @@ export class SpotifyService {
 
   getQuery(query: string) {
     if (this.canCall) {
-      const url = `https://api.spotify.com/v1/${query}`;
+      const url = `${environment.API}${query}`;
       const headers = new HttpHeaders({
         Authorization:
           `Bearer ${this.token}`
