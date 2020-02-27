@@ -1,7 +1,8 @@
 .detail-input{
     display: grid;
     margin: 5% 0% 1% 10%;
-    font-size: 14px;
+    font-size: 18px;
+    color: #fafafa;
 }
 
 .album-view{
@@ -41,6 +42,8 @@
 }
 
 .search-results{
+    font-size: 24px;
+    color: #fafafa;
     padding: 45px 0px 20px 0px;
 }
 

@@ -15,7 +15,7 @@
         <div class="search-results" *ngIf="name">
             <p>Resultados encontrados para "{{name}}"</p>
         </div>
-        <div class="album-view" >
+        <div class="album-view" *ngIf="name">
             <app-album-preview [albumsItens]="album"></app-album-preview>
         </div>
     </div>
