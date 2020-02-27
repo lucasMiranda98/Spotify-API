@@ -1,8 +1,9 @@
 .main-album-view{
-    width: 185px;
-    height: 230px;
-    display: inline-block;
-    margin: 0px 0px 20px 0px;
+    width: 1228px;
+    height: 500px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .container-img{
@@ -10,6 +11,12 @@
     height: 140px;
     background-color: #fafafa;
     opacity: 0.5;
+}
+
+.album {
+    cursor: pointer;
+    width: 243px;
+    height: 220px;
 }
 
 .card-img-top {

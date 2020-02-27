@@ -4,6 +4,13 @@
     font-size: 14px;
 }
 
+.album-view{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1219px;
+    height: 500px;
+}
+
 .form-control {
     width: 80%;
     margin: 0% 0% 0% 10%;
@@ -27,6 +34,9 @@
 }
 
 .container-search-results{
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
     padding: 0% 10% 0% 10%;
 }
 

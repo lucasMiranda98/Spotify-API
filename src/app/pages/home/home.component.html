@@ -2,7 +2,7 @@
     <div class="search-information-input">
         <form>
             <div class="form-group">
-                <label class="detail-input">Busque por artistas, álbuns ou músicas</label>
+                <label class="detail-input">Busque por artistas ou álbuns</label>
                 <input #nameAlbum type="text" [ngClass]="{'form-control': value === undefined, 'form-control-filled': value !== undefined }" placeholder="Comece a escrever..." (keyup)="searchByName(nameAlbum.value)" name="name">
             </div>
         </form>
@@ -12,7 +12,7 @@
         <div class="search-results">
             <p>Resultados encontrados para "{{name}}"</p>
         </div>
-        <div class="album-view">
+        <div class="album-view" >
             <app-album-preview [albumsItens]="album"></app-album-preview>
         </div>
     </div>
