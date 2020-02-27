@@ -1,0 +1,97 @@
+.album-detail{
+    padding: 0% 10%;
+}
+
+.button-return{
+    cursor: pointer;
+    display: grid;
+    font-size: 14px;
+    margin: 40px 0px 10px 0px;
+    width: 51px;
+}
+
+.details{
+    color: #fafafa;
+}
+
+.album-view{
+    float: left;
+}
+
+.album-list{
+    padding: 0% 0 0% 2%;
+    float: right;
+    width: 70%;
+}
+
+.album-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.album-list ul li span {
+    display: flex;
+}
+.album-list ul li span p {
+    margin: 0% 5% 10px 0%;
+}
+
+.first-topic{
+    margin: 0% 5% 0 0%;
+    color: #999999;
+}
+.second-topic{
+    width: 525px;
+}
+
+.main-album-view{
+    width: min-content;
+    margin: 15px 0px 100px 0px;
+
+}
+
+.container-img{
+    border: 1px solid orange;
+    width: 235px;
+    height: 230px;
+    margin: 0 0 11%;
+    background-color: #fafafa;
+    opacity: 0.5;
+}
+
+.album-detail-child{
+    width: 78%;
+    margin: 0 11%;
+}
+
+.album-detail-child ul {
+    list-style-type: none;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+}
+
+.album-name{
+    color: #fafafa;
+    margin: 0px 0px 10px 0px;
+}
+
+.artist-name{
+    color: #999999;
+}
+
+.card-image {
+    width: 237px;
+}
+
+
+@media only screen and (max-width: 375px) {
+
+    .album-view{
+        margin: 10px 0px 0px 25px;
+    }
+
+    .album-list{
+        margin: 10px 45px 0px 0px;
+    }
+ }

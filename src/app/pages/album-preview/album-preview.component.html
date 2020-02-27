@@ -1,0 +1,13 @@
+<div class="main-album-view">
+    <div class="album-view" (click)="getDetails(item)" *ngFor="let item of albumsItens">
+        <div class="container-img">
+            <img class="card-img-top" [src]="item.images | noimage">
+        </div>
+        <div class="album-detail">
+            <ul>
+                <li class="album-name">{{ item.name }}</li>
+                <li class="artist-name" *ngFor="let artista of item.artists" >{{ artista.name }}</li>
+            </ul>
+        </div>
+    </div>
+</div>

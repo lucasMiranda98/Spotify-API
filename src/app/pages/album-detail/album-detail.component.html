@@ -1,0 +1,36 @@
+<div class="album-detail">
+    <div class="button-return">
+        <p (click)="backHomePage()">Voltar</p>
+    </div>
+    <div class="details">
+        <div class="album-view">
+            <div class="main-album-view">
+                <div class="container-img">
+                    <img class="card-image" [src]="album.images | noimage">
+                </div>
+
+                <div class="album-detail-child">
+                    <ul>
+                        <li class="album-name">{{album.name}}</li>
+                        <li class="artist-name" *ngFor="let artista of album.artists">{{artista.name}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="album-list">
+            <ul>
+                <li *ngFor="let track of trackDetailList; let i = index">
+                    <span>
+                        <p class="first-topic">{{i + 1}}.</p>
+                        <p class="second-topic"> {{track.name}}</p>
+                        <p class="third-topic">{{track.duration_ms | formatMin}}</p>
+                    </span>
+                    <span>
+                        <iframe [src]="track.uri | domsanitizer" width="554" height="105" frameborder="0"
+                            allowtransparency="true" allow="encrypted-media"></iframe>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
